@@ -1,0 +1,20 @@
+.counter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter-item{
+    text-align: center;
+    width: calc(33.33 - 30px);
+}
+
+.counter-item h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #0a472e;
+}
+
+.counter-item p{
+    line-height: 1.4;
+    color: #555;
+}

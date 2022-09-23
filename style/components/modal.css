@@ -1,0 +1,83 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 20;
+}
+
+.modal.active{
+    width: 100%;
+}
+
+.background-window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .3;
+    z-index: 1;
+}
+
+.modal-inner{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border: 4px solid rgb(86, 86, 236);
+    border-radius: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 25%;
+    left: -500px;
+    z-index: 2;
+}
+
+.modal.active .modal-inner{
+    left: 35%;
+}
+
+.close{
+    position: relative;
+}
+
+
+.close span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: blue;
+    cursor: pointer;
+}
+.modal-inner h2{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-inner p{
+    margin: 20px 0;
+}
+
+.modal-inner input, .modal-inner button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.modal-inner button{
+    border: none;
+    background-color: blue;
+    color: #fff;
+}
+

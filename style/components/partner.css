@@ -1,0 +1,17 @@
+.partner{
+    border-top: 1px solid #e1e1e1;
+    padding-top: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partner img{
+    width: 15%;
+    opacity: .5;
+    transition: .4s;
+}
+
+.partner img:hover{
+    opacity: 1;
+}

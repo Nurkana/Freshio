@@ -1,0 +1,46 @@
+.service{
+    display: flex;
+    justify-content: space-between;  
+    padding-top: 30px;
+    border-bottom: 1px solid #e1e1e1; 
+
+}
+.service-item{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.service-item img{
+    margin-right: 20px;
+}
+
+.service-item h2{
+    font-size: 16px;
+    color: #0a472e;
+    margin-bottom: 10px;
+}
+
+.service-item p{
+    font-size: 12px;
+    color: #555;
+}
+.service-item::after{
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left:0;
+    height: 3px;
+    width: 0;
+    background-color: #000;
+    transition: .5s;
+    opacity: .5;
+}
+
+.service-item:hover::after{
+    width:100%;
+    opacity: 1;
+}

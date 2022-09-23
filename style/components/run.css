@@ -1,0 +1,12 @@
+.run{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    height: 50px;
+}
+
+.run p{
+    font-size: 20px;
+}
